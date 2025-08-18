@@ -37,7 +37,7 @@ def OnlineBooking(request):
         MyData.save()
         return HttpResponse('Booking Successfully')
     return render(request,'online_booking_page.html')
-def Aothur_login(request):
+def Admin_login(request):
     # conn = mysql.connector.connect(host='localhost', user='root', password='', database='Hotel_Management_System')
     if request.method == 'POST':
         User_email = request.POST.get('Email')
@@ -53,11 +53,11 @@ def Aothur_login(request):
             return redirect("Adminpage")
         else:
             return HttpResponse('user name and password not matching')
-    return render(request,'Athur_login_page.html')
+    return render(request,'Admin_login_page.html')
 def auth_logout(request):
     logout(request)
     return redirect('Home')
-def Aothur_Reg(request):
+def Admin_Reg(request):
     if request.method == 'POST':
         Data = models.Authorregis()
         Data.Fname = request.POST.get('Fname')
@@ -68,12 +68,12 @@ def Aothur_Reg(request):
         Con_password = request.POST.get('Con_password')
         if Data.Password == Con_password:
             Data.save()
-            return redirect('Aothur_login')
+            return redirect('Admin_login')
         else:
            return HttpResponse('password and confirm password not matching')
-    return render(request,'Athur_Register_Page.html')
-def Aothur_Fotpass(request):
-    return render(request,'Author_forgetpass_page.html')
+    return render(request,'Admin_Register_Page.html')
+def Admin_Fotpass(request):
+    return render(request,'Admin_forgetpass_page.html')
 def all_admin(request):
     return render(request,'admin/AdminAllinclude.html')
 def Admin(request):
