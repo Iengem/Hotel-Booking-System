@@ -1861,7 +1861,6 @@ Counter Part CSS
    color:var(--bdcolor);
 }
 
-/*************************************** Author_Forgetpass_Page CSS **************************************/
 
 
 
@@ -1883,3 +1882,13 @@ Counter Part CSS
     color: var(--maincolor);
 }
 
+
+@media (max-width: 575.98px) {
+    .about_video, .Book_info, #Staff, #OUR_ROOMS, #Counter, #Service, #GALLERY{
+        display: none;
+    }
+    .about-title{
+        font-size: 30px;
+    }
+
+}

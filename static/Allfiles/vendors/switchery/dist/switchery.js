@@ -140,22 +140,6 @@ require.define = function (name, exports) {
 };
 require.register("abpetkov~transitionize@0.0.3", function (exports, module) {
 
-/**
- * Transitionize 0.0.2
- * https://github.com/abpetkov/transitionize
- *
- * Authored by Alexander Petkov
- * https://github.com/abpetkov
- *
- * Copyright 2013, Alexander Petkov
- * License: The MIT License (MIT)
- * http://opensource.org/licenses/MIT
- *
- */
-
-/**
- * Expose `Transitionize`.
- */
 
 module.exports = Transitionize;
 
@@ -1558,22 +1542,7 @@ function parse(event) {
 });
 
 require.register("switchery", function (exports, module) {
-/**
- * Switchery 0.8.1
- * http://abpetkov.github.io/switchery/
- *
- * Authored by Alexander Petkov
- * https://github.com/abpetkov
- *
- * Copyright 2013-2015, Alexander Petkov
- * License: The MIT License (MIT)
- * http://opensource.org/licenses/MIT
- *
- */
 
-/**
- * External dependencies.
- */
 
 var transitionize = require('abpetkov~transitionize@0.0.3')
   , fastclick = require('ftlabs~fastclick@v0.6.11')
